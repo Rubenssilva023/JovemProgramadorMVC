@@ -1,0 +1,35 @@
+﻿@model AlunoModel
+
+<form asp-controller="Alunos" asp-action="Salvar" method="post">
+ 
+    
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Nome</label>
+        <input type="text" asp-for=" Nome" class="form-control col-md-6" id="formGroupExampleInput">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Idade</label>
+        <input type="text" asp-for="Idade" class="form-control col-md-1" id="formGroupExampleInput2">
+    </div>
+
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Contato</label>
+        <input type="text" asp-for=" Contato" class="form-control col-md-2" id="formGroupExampleInput" placeholder="(00)9999-9999">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Email</label>
+        <input type="text" asp-for=" Email" class="form-control col-md-2 " id="formGroupExampleInput2">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Cep</label>
+        <input type="text" asp-for=" Cep" class="form-control col-md-2" id="formGroupExampleInput2" placeholder="000000-00">
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary" type="submit">Salvar</button>
+        <a class="btn btn-primary" type="button" asp-controller="Alunos" asp-action="Index">Voltar</a>
+    </div>
+
+</form>
