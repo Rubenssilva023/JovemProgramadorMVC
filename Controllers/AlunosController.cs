@@ -58,7 +58,7 @@ namespace JovemProgramadorMVC.Controllers
         {
             try {
             _alunoRepositorio.EditarAluno(aluno);
-                TempData["MensagemSucesso"] = "Aluno Salvo com Sucesso!";
+                TempData["MensagemSucesso"] = "Aluno Excluido com Sucesso!";
                 return RedirectToAction("Index");
             }
             catch (System.Exception) {
